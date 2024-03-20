@@ -1,5 +1,6 @@
 # little-lemon-project
 This is my reporting project of the Frontend Developer course from META
+I hope i will be a great Developer!
 
 
 # Getting Started with Create React App
