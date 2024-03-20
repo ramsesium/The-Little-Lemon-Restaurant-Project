@@ -21,9 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
 
 # public-key
 personal-key
 personal-key.pub
 git@github.com:ramsesium/
 
+=======
+>>>>>>> a8e4147 (Merge remote changes)
