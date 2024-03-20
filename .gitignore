@@ -22,8 +22,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#key
-git@github.com:ramsesium/
+# public-key
 personal-key
 personal-key.pub
+git@github.com:ramsesium/
+
 
