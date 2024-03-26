@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
-import Navigation from './Component/Navigation.js';
-import Hero from './Component/Hero.js';
-import Highlights from './Component/Highlights.js';
-import Testimonials from './Component/Testimonials.js';
-import About from './Component/About.js';
-import Footer from './Component/Footer'
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import Highlights from './components/Highlights';
+import Testimonials from './components/Testimonials';
+import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,3 +21,4 @@ function App() {
 }
 
 export default App;
+
