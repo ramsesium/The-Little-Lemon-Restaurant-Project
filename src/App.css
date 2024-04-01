@@ -1,9 +1,192 @@
 
 body {
-  background-color:rgb(255, 255, 255);
+  background-color:#ffffff;
+  font-family: Karla, Arial, sans-serif; /* Пример шрифта */
+}
+
+h1, h2, h3 {
+  font-family: Markazi;
 }
 
 /* HEADER */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  gap: 20px;
+}
+
+.logo {
+  height: 3rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN */
+
+main {
+  min-height: 50vh;
+  margin: 2rem;
+}
+
+/*FOOTER*/
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 10vw);
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* footer div {
+  background-color: #ad4141;
+} */
+
+.logofooter {
+  display: flex;
+  height: 5rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer::after {
+  content: '';
+  margin-right: 10px;
+}
+
+.door-nav,
+.contact-nav,
+.social-nav {
+  text-align: center;
+}
+
+.sub-nav-links {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.sub-nav-links li {
+  margin-bottom: 5px;
+}
+
+.door-nav h3,
+.contact-nav h3,
+.social-nav h3 {
+  height: 3rem;
+  text-align: left;
+}
+
+@media (max-width: 880px) {
+  .logo-footer {
+    display: none;
+  }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .sub-nav-links li {
+    margin-bottom: 3px;
+  }
+
+  .door-nav,
+  .contact-nav,
+  .social-nav {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem 1rem;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .logo {
+    height: 2rem;
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items:end;
+    justify-content: left;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 4px;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .logo {
+    order: 1;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 2px;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+/*
+body {
+  background-color:rgb(255, 255, 255);
+}
+
+// HEADER 
 
 header {
   display: flex;
@@ -38,14 +221,14 @@ nav ul li a {
   color: black;
 }
 
-/* MAIN */
+// MAIN
 
 .main {
   height: auto;
   margin: 2rem;
 }
 
-/*FOOTER*/
+// FOOTER
 
 
 footer {
@@ -53,7 +236,6 @@ footer {
   grid-template-columns: repeat(4, 180px);
   justify-content: center;
   gap: 3rem;
-  /* background-color: #98df98; */
 }
 
 
@@ -65,8 +247,7 @@ footer {
 
 .logo-footer::after {
   content: '';
-  margin-right: 70px; /* Увеличиваем расстояние между логотипом и первой колонкой */
-}
+  margin-right: 10px;
 
 .door-nav,
 .contact-nav,
@@ -88,9 +269,9 @@ footer {
 .contact-nav h3,
 .social-nav h3 {
   height: 2.5rem;
-  /* white-space: nowrap; */
-  text-align: left; /* Выравниваем текст по левому краю */
-  margin: 0; /* Убираем внешние отступы */
+  // white-space: nowrap;
+  text-align: left;
+  margin: 0;
 }
 
 @media (max-width: 880px) {
@@ -116,7 +297,7 @@ footer {
     padding: 0.5rem;
   }
 }
-/* @media (max-width: 768px) */
+// @media (max-width: 768px)
 
 @media (max-width: 768px) {
   header {
@@ -140,32 +321,34 @@ footer {
 
 }
 
-/* @media (max-width: 480px) */
+// @media (max-width: 480px)
 
 @media (max-width: 480px) {
 
   .logo {
-    order: 1; /* Лого первым по порядку в колонке */
-    margin-bottom: 10px; /* Добавляем отступ снизу */
+    order: 1;
+    margin-bottom: 10px;
   }
 
   nav ul {
-    order: 2; /* Навигация второй по порядку в колонке */
+    order: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   nav ul li {
-    margin-right: 0; /* Убираем правый отступ у элементов навигации */
-    margin-bottom: 5px; /* Добавляем отступ между элементами навигации */
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 
   footer {
-    grid-template-columns: 1fr; /* Один элемент в колонке на совсем маленьких экранах */
-    gap: 0px; /* Уменьшаем отступы между элементами */
+    grid-template-columns: 1fr;
+    gap: 0px;
     padding-left: 5vw;
     padding-right: 5vw;
   }
 
 }
+*/
+

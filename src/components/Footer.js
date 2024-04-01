@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../lllogo.svg";
+import Logo from "../logover.png";
 import "../App.css";
 
 
@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="logo-footer">
-        <img src={Logo} alt="Social Icon" className="logo" />
+        <img src={Logo} alt="Social Icon" className="logofooter" />
       </div>
 
       <div className="door-nav">
