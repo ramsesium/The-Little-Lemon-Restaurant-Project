@@ -1,71 +1,89 @@
-.App {
-  text-align: center;
+body {
+  background-color:rgb(255, 255, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* HEADER */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content:space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem 3rem;
+  gap: 20px
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  height: 3rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-nav {
+nav ul {
   display: flex;
-  align-items: center;
-  justify-content:center;
-  padding: 1rem;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-links li {
-  margin-right: 1rem;
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
+nav ul li {
   margin-right: 20px;
 }
 
-header, main, footer {
-  height: 33.33vh;
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN */
+
+.main {
+  height: auto;
+}
+
+/*FOOTER*/
+
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  /* background-color: #98df98; */
+}
+
+.logo-footer {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.door-nav,
+.contact-nav,
+.social-nav {
+  text-align: center;
+  padding: 1rem;
 }
 
 .sub-nav-links {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.sub-nav-links li {
+  margin-bottom: 5px;
+}
+
+.door-nav h3,
+.contact-nav h3,
+.social-nav h3 {
+  white-space: nowrap;
+  text-align: left; /* Устанавливаем фиксированную высоту */
+  text-align: left; /* Выравниваем текст по левому краю */
+  margin: 0; /* Убираем внешние отступы */
 }

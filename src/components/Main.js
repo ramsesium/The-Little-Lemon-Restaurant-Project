@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"; // Подключаем CSS файл для стилей
+import "../App.css";
 
 const Highlights = () => {
   return (
@@ -19,12 +19,22 @@ const Testimonials = () => {
   );
 };
 
+const About = () => {
+  return (
+    <div className="about">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+    </div>
+  );
+};
+
 const Main = () => {
   return (
-    <main>
+    <main className="main">
       <h1>Main Content</h1>
       <Highlights />
       <Testimonials />
+      <About />
     </main>
   );
 };
