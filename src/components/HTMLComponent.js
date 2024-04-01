@@ -16,11 +16,9 @@ const HTMLComponent = () => {
         </Helmet>
 
         <body>
-          <div>
-            <Header />
-            <Main />
-            <Footer />
-          </div>
+          <Header />
+          <Main />
+          <Footer />
         </body>
       </>
     );

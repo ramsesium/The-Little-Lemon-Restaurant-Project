@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../lllogo.svg"; // Измененный путь к изображению
-import "../App.css"; // Подключаем CSS файл для стилей
+import Logo from "../lllogo.svg";
+import "../App.css";
 
 const NavigationBar = () => {
   return (
