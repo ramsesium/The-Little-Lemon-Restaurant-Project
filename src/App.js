@@ -1,13 +1,18 @@
 import React from 'react';
-import HTMLComponent from './components/HTMLComponent';
+// import HTMLComponent from './components/HTMLComponent';
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
-    <>
-      <HTMLComponent />
-    </>
+    <container>
+      <Header />
+      <Main />
+      <Footer />
+    </container>
   );
 }
 
